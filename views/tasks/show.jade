@@ -1,0 +1,7 @@
+h2 Task
+div.details
+  p #{task.title} 
+  p #{task.description}
+  div.toolbar
+    a.edit(href='/weeks/#{task.dateString}/tasks/#{task.id}') Edit
+

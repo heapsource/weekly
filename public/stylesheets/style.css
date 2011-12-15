@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import "reset.css";
+html {
+  height: 100%;
+  background-image: url(/images/denim.png); background-repeat: repeat;
+}
+body {
+  font-family: "Helvetica", "Verdana", "Arial";
+  font-size: 14px;
+  height:100%;
+}
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
+  height:100%;
+}
+.header > ul {
+  overflow: hidden;
+  margin-top: 2px;
+}
+.header > ul > li {
+  float: left;
+  position: relative;
+  padding: 13px 5px 3px 5px;
+}
+.header > ul > li.selected {
+  background-color: #FFF;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+  -webkit-box-shadow: 1px 1px 1px 0px #474747;
+  -moz-box-shadow: 1px 1px 1px 0px #474747;
+  box-shadow: 1px 1px 1px 0px #474747;
+}
+.header > ul > li a {
+  color: #FFF;
+  text-decoration: none;
+}
+.header > ul > li.selected a {
+  color: #000;
+}
+.header > ul > li > a > span {
+  position:absolute;
+  top: 2px;
+  right: 2px;
+  height: 18px;
+  overflow: hidden;
+  font-size: 9pt;
+  color: #CCC;
+}
+
+.container {
+  background-color: #FFF;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px 0px #474747;
+  -moz-box-shadow: 1px 1px 1px 0px #474747;
+  box-shadow: 1px 1px 1px 0px #474747;
+}
+
+.list {
+  float:left;
+  padding: 3px;
+  width: 400px;
+  padding: 0, 2px;
+}
+
+.list ul li {
+  padding: 0, 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #F2F2F2;
+  margin-top: 2px;
+  padding: 2px;
+}
+.list ul li a {
+  display: inline-block;
+  margin-left: 2px;
+  color: #000;
+  width: 350px;
+  text-decoration: none;
+}
+
+.list ul li.selected {
+  background-color: #FA8989;
+
+}
+
+.list ul li.done a {
+  text-decoration: line-through;
+}
+
+.header > ul > li.selected > a > span  {
+  color: #6E6E6E;
+
+}
+
+.visual {
+  float:left;
+  padding: 3px;
+}
+
+.visual div.details {
+  width: 284px;
+}
+.visual p {
+  padding: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  margin-top: 2px;
+}
+.visual p:last-of-type {
+  min-height: 85px;
+}
+.toolbar {
+  overflow:hidden;
+  padding: 3px;
+  text-align: right;
+}
+
+.toolbar > a {
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 3px;
+  color: #474747;
+  text-decoration: none;
+  background-color: #DDDDDD;
+}
+
+.panel > h2 {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.visual > form {
+  display: inline-block;
+}
+
+fieldset > label {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  padding: 2px;
+}
+
+form input[type=submit] {
+  float:right;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-style: none;
+  padding: 3px;
+  color: #474747;
+  background-color: #DDDDDD;
+}
+
+form fieldset {
+  padding: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #F5F5F5;
+  margin-top: 2px;
+}
+
+form input[type=text], .visual > form textarea {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C3CBD6;
+  width:300px;
+  color: #5C5C5C;
+  background-color: #DDDDDD;
+  padding: 2px;
+}
+
+form textarea {
+  min-height: 85px;
+}
+
+form input[type=text]:focus, .visual > form textarea:focus {
+  border-color: #758396;
+}
+

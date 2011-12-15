@@ -1,0 +1,16 @@
+ul
+  li.prev-week
+    a(href='#prev-week')
+      h2 Prev
+  each day in days
+      - var classes = ['day']; if(day.isToday) { classes.push('today'); }; if(day.isCurrent) { classes.push('selected'); };
+      li(class=classes, title=day.date)
+        a(href='/weeks/#{day.date}', title='Goto #{day.date}')
+          span
+            span #{day.monthName}
+            span #{day.dayOfMonth}
+          h2 #{day.dayName}
+  li.next-week
+    a(href='#next-week')
+      h2 Next
+

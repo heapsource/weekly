@@ -1,0 +1,15 @@
+h2 Edit Task 
+form(autocomplete='off', action='/weeks/#{task.dateString}/tasks/#{task.id}', method='PUT')
+  fieldset
+    label(for='title') Title
+    input(type='text', id='title', name='title', value=task.title)
+  fieldset
+    label(for='description') Description
+    textarea(id='description', name='description', title='description')
+      !=task.description
+  fieldset
+    label(for='done') Done
+    input(type='checkbox', id='done', name='done', value='yes', checked=(task.done ? 'checked' : ''))
+  fieldset
+    input(type='submit', value='Update')
+

@@ -1,0 +1,17 @@
+{
+  "name": "weekly",
+  "version": "0.0.1-2",
+  "private": true,
+  "subdomain": "weekly",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "2.5.2",
+    "jade": ">= 0.0.1",
+    "mongoose": ">= 2.4.1",
+    "safe_datejs": ">= 0.0.1",
+    "express-resource": ">= 0.2.3",
+    "socket.io": ">= 0.8.7"
+  }
+}

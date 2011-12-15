@@ -1,0 +1,10 @@
+h2 Tasks for Today
+div.toolbar
+  a.add(href='#add') Add Task
+ul.tasks
+  each task in tasks
+    li(class=[task.id,(task.done? 'done' : undefined)])
+      input(type='checkbox', value=task.id, checked=(task.done ? 'checked' : undefined))
+      a(href='/weeks/' + date + '/tasks/' + task.id)
+        h3 #{task.title}
+
